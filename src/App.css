@@ -1,0 +1,122 @@
+body {
+  font-family: 'Hachi Maru Pop', cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(43, 2, 26);
+}
+
+input {
+  border-radius: 8px;
+  border: none;
+  padding: 6px 16px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 4px 16px;
+  margin: 0px 2px;
+  font-family: inherit;
+  background-color: #f1bfe5;
+}
+
+button:hover {
+  background-color: #e980cf;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px #53082f;
+}
+
+/* .input-area {
+  background-color: #e2539b;
+  width: 400px;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+} */
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.logo.fuwa {
+  animation: fuwafuwa 0.5s ease;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.incomplete-area {
+  border: 2px solid #e2539b;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete-area {
+  border: 2px solid #e2539b;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+  background-color: #f588bf33;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.todo-list ul li {
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.todo-list ul li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('./assets/niku.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* .todo-item {
+  margin: 6px;
+} */
