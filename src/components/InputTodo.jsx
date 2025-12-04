@@ -1,3 +1,4 @@
+import React from 'react';
 import iggy from '../assets/ita.png';
 import { useState } from 'react';
 
